@@ -1,7 +1,9 @@
 package main
 
 import (
+	"algorithm/src/recursive"
 	"algorithm/src/sort"
+	"fmt"
 )
 
 func main() {
@@ -9,4 +11,10 @@ func main() {
 
 	// SelectionSort
 	sort.SelectionSort(arr)
+
+	var N int
+	fmt.Print("Enter a number: ")
+	fmt.Scan(&N)
+	result := recursive.Factorial(N)
+	fmt.Println(result)
 }
