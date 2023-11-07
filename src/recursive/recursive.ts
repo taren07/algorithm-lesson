@@ -4,6 +4,10 @@ function factorial(N: number): number {
 	}
 	return factorial(N - 1) * N;
 }
-const N: number = parseInt(prompt("Enter a number:")!);
-
-console.log(factorial(N));
+const userInput = prompt("Enter a number:");
+if (userInput !== null) {
+	const N: number = parseInt(userInput);
+	console.log(factorial(N));
+} else {
+	console.log("No number was entered.");
+}
