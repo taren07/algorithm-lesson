@@ -4,6 +4,6 @@ function factorial(N: number): number {
 	}
 	return factorial(N - 1) * N;
 }
+const N: number = parseInt(prompt("Enter a number:")!);
 
-const N: number = parseInt(prompt("Enter a number:"));
 console.log(factorial(N));
