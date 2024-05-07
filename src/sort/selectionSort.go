@@ -15,3 +15,17 @@ func SelectionSort(arr []int) {
         arr[i], arr[minPosition] = arr[minPosition], arr[i]
     }
 }
+
+// import (
+// 	"algorithm/src/sort"
+// 	"fmt"
+// )
+
+
+// arr := []int{12, 4, 7, 2, 10, 8}
+// sort.SelectionSort(arr)
+// var N int
+// fmt.Print("Enter a number: ")
+// fmt.Scan(&N)
+// result := recursive.Factorial(N)
+// fmt.Println(result)

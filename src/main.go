@@ -1,20 +1,14 @@
 package main
 
 import (
-	"algorithm/src/recursive"
-	"algorithm/src/sort"
+	// "algorithm/src/recursive"
+	// "algorithm/src/sort"
+	"algorithm/src/euclidean"
 	"fmt"
 )
 
 func main() {
-	arr := []int{12, 4, 7, 2, 10, 8}
-
-	// SelectionSort
-	sort.SelectionSort(arr)
-
-	var N int
-	fmt.Print("Enter a number: ")
-	fmt.Scan(&N)
-	result := recursive.Factorial(N)
-	fmt.Println(result)
+	var A, B int64
+	fmt.Scan(&A, &B)
+	fmt.Println(euclidean.GCD(A, B))
 }
