@@ -16,12 +16,14 @@ func SelectionSort(arr []int) {
     }
 }
 
+// Please write the main function below.
+
 // import (
 // 	"algorithm/src/sort"
 // 	"fmt"
 // )
 
-
+// func main() {
 // arr := []int{12, 4, 7, 2, 10, 8}
 // sort.SelectionSort(arr)
 // var N int
@@ -29,3 +31,4 @@ func SelectionSort(arr []int) {
 // fmt.Scan(&N)
 // result := recursive.Factorial(N)
 // fmt.Println(result)
+// }

@@ -3,12 +3,13 @@ package main
 import (
 	// "algorithm/src/recursive"
 	// "algorithm/src/sort"
-	"algorithm/src/euclidean"
+	// "algorithm/src/euclidean"
+	"algorithm/src/sort"
 	"fmt"
 )
 
 func main() {
-	var A, B int64
-	fmt.Scan(&A, &B)
-	fmt.Println(euclidean.GCD(A, B))
+	arr := []int{15, 38, 2, 21}
+	sort.BubbleSort(arr)
+	fmt.Println(arr)
 }

@@ -14,6 +14,9 @@ func GCD(A, B int64) int64 {
 	return B
 }
 
+
+// Put the following in the main file and run it
+
 // import (
 // 	"algorithm/src/euclidean"
 // 	"fmt"
