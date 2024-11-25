@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	arr := []int{15, 38, 2, 21}
+	arr := []int{4, 7, 2, 5, 8, 1, 3, 6, 9}
 	sort.BubbleSort(arr)
 	fmt.Println(arr)
 }

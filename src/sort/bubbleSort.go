@@ -1,14 +1,16 @@
 package sort
 
-func BubbleSort(arr []int) {
-	n := len(arr)
-	for i := 0; i < n-1; i++ {
-		for j := 0; j < n-i-1; j++ {
-			if arr[j] > arr[j+1] {
-				arr[j], arr[j+1] = arr[j+1], arr[j]
+func BubbleSort(nums []int) []int {
+	n := len(nums)
+
+	for i := 0; i < n; i ++ {
+		for j := 0; j < n-i-1; j ++ {
+			if nums[j] > nums[j+1] {
+				nums[j], nums[j+1] = nums[j+1], nums[j]
 			}
 		}
 	}
+	return nums
 }
 
 // import (
@@ -16,6 +18,6 @@ func BubbleSort(arr []int) {
 // 	"fmt"
 // )
 
-// arr := []int{15, 38, 2, 21}
-// 	sort.BubbleSort(arr)
-// 	fmt.Println(arr)
+// nums := []int{15, 38, 2, 21}
+// 	sort.BubbleSort(nums)
+// 	fmt.Println(nums)
