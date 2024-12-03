@@ -10,6 +10,6 @@ import (
 
 func main() {
 	arr := []int{4, 7, 2, 5, 8, 1, 3, 6, 9}
-	sort.BubbleSort(arr)
+	sort.MergeSort(arr)
 	fmt.Println(arr)
 }

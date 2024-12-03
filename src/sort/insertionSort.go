@@ -1,16 +1,22 @@
 package sort
 
-func InsertionSort(arr []int) {
-	n := len(arr)
-	for i := 1; i < n; i++ {
-		tmp := arr[i]
-		j := i - 1
-		for j >= 0 && arr[j] > tmp {
-			arr[j+1] = arr[j]
+import (
+	"fmt"
+)
+
+func InsertionSort(nums []int) []int {
+	for i := 1; i < len(nums); i++ {
+		key := nums[i]
+		j :=  i - 1
+		fmt.Println(j)
+		for j >= 0 && nums[j] > key {
+			nums[j+1] = nums[j]
+			fmt.Println(nums)
 			j--
 		}
-		arr[j+1] = tmp
+		nums[j+1] = key
 	}
+	return nums
 }
 
 // import (
